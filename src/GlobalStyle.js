@@ -9,4 +9,14 @@ export const GlobalStyle = createGlobalStyle`
         --defaultBlue: hsla(231, 99%, 62%, 1);
         --white: #FFFFFF;
     }
+
+    *{
+        font-family: Poppins;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 36px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
 `
