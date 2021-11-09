@@ -1,17 +1,13 @@
 // Components
-import Button from "./Components/ButtonDefault/Button";
-import ButtonOutline from "./Components/ButtonOutline/ButtonOutline";
-import ButtonText from "./Components/ButtonText/ButtonText";
+import Button from "./Button";
 
 // Styles
 import { GlobalStyle } from "./GlobalStyle";
 
 const App = () => (
   <div className="App">
-    <h1>Button</h1>
+    <h1>Buttons</h1>
     <Button />
-    <ButtonOutline />
-    <ButtonText />
     <GlobalStyle />
   </div>
 );
