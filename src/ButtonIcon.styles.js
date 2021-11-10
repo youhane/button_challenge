@@ -8,8 +8,9 @@ export const ButtonIcon = styled.button`
     padding: 0 1rem;
     color: white;
     display: flex;
+    box-shadow: 0px 2px 3px 0px hsla(225, 100%, 40%, 0.2);
 
     span{
-        padding: 1rem .5rem 0 0;
+        padding: .9rem .5rem 0 0;
     }
 `
