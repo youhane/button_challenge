@@ -7,4 +7,8 @@ export const GlobalStyle = createGlobalStyle`
         font-weight: 500;
         transition: all .2s;
     }
+
+    div > * {
+        margin: 1rem;
+    }
 `
