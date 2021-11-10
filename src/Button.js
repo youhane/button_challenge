@@ -1,5 +1,3 @@
-import react from "react";
-
 import { ButtonDefault } from "./Button.styles";
 import { ButtonDisableShadow } from "./ButtonDisableShadow.styles";
 import { ButtonOutline } from "./ButtonOutline.styles";
@@ -12,6 +10,7 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { ButtonIcon } from "./ButtonIcon.styles";
+import { ButtonSize } from "./ButtonSize.styles";
 
 library.add(faShoppingCart)
 
@@ -43,6 +42,9 @@ const Button = ({ variant, disableShadow, disabled, startIcon, endIcon, size, co
                 </span>
                 <h1>Default</h1>
             </ButtonIcon>
+            <ButtonSize>
+                <h1>Default</h1>
+            </ButtonSize>
         </div>
     )
 }
