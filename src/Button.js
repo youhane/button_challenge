@@ -1,16 +1,16 @@
+import react from "react";
+
 import { ButtonDefault } from "./Button.styles";
 import { ButtonDisableShadow } from "./ButtonDisableShadow.styles";
-import { ButtonOutline } from "./ButtonOutline.styles"
+import { ButtonOutline } from "./ButtonOutline.styles";
 import { ButtonText } from "./ButtonText.styles";
 import { ButtonDisabled } from "./ButtonDisabled.styles";
 import { ButtonDisabledText } from "./ButtonDisabledText.styles";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { library } from '@fortawesome/fontawesome-svg-core'
-
-
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { ButtonIcon } from "./ButtonIcon.styles";
 
 library.add(faShoppingCart)
