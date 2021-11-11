@@ -73,6 +73,25 @@ class Button extends Component {
                     <h1>Default</h1>
                 </ButtonDisableShadow>
             )
+        } else if (this.props.size) {
+            return (
+                <ButtonSize>
+                    <h1>Default</h1>
+                </ButtonSize>
+            )
+
+        } else if (this.props.size) {
+            return (
+                <ButtonSize>
+                    <h1>Default</h1>
+                </ButtonSize>
+            )
+        } else if (this.props.variant && this.props.disabled) {
+            return (
+                <ButtonDisabledText>
+                    <h1>Default</h1>
+                </ButtonDisabledText>
+            )
         } else {
             return (
                 <ButtonDefault>
