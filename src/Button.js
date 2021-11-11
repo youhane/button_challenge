@@ -14,6 +14,7 @@ import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { ButtonIcon } from "./ButtonIcon.styles";
 import { ButtonSize } from "./ButtonSize.styles";
 import { Component } from "react/cjs/react.production.min";
+import { ButtonColor } from './ButtonColor.styles';
 
 library.add(faShoppingCart)
 
@@ -69,9 +70,9 @@ class Button extends Component {
             )
         } else if (this.props.color) {
             return (
-                <ButtonDisableShadow>
+                <ButtonColor color={this.props.color}>
                     <h1>Default</h1>
-                </ButtonDisableShadow>
+                </ButtonColor>
             )
         } else if (this.props.size) {
             return (
