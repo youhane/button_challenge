@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { ButtonDefault } from "./Button.styles";
 import { ButtonDisableShadow } from "./ButtonDisableShadow.styles";
 import { ButtonOutline } from "./ButtonOutline.styles";
@@ -11,65 +13,74 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { ButtonIcon } from "./ButtonIcon.styles";
 import { ButtonSize } from "./ButtonSize.styles";
+import { Component } from "react/cjs/react.production.min";
 
 library.add(faShoppingCart)
 
-const Button = ({ variant, disableShadow, disabled, startIcon, endIcon, size, color }) => {
-    return (
-        <div>
-            <ButtonDefault>
-                <h1>Default</h1>
-            </ButtonDefault>
-            <ButtonOutline>
-                <h1>Default</h1>
-            </ButtonOutline>
-            <ButtonText>
-                <h1>Default</h1>
-            </ButtonText>
-            <ButtonDisableShadow>
-                <h1>Default</h1>
-            </ButtonDisableShadow>
-            <ButtonDisabled>
-                <h1>Disabled</h1>
-            </ButtonDisabled>
-            <ButtonDisabledText>
-                <h1>Disabled</h1>
-            </ButtonDisabledText>
-            <ButtonIcon>
-                <span>
-                    <FontAwesomeIcon icon={"shopping-cart"} size="2x" />
-                </span>
-                <h1>Default</h1>
-            </ButtonIcon>
-            <ButtonIcon>
-                <h1>Default</h1>
-                <span>
-                    <FontAwesomeIcon icon={"shopping-cart"} size="2x" />
-                </span>
-            </ButtonIcon>
-            <ButtonSize>
-                <h1>Default</h1>
-            </ButtonSize>
-            <ButtonSize>
-                <h1>Default</h1>
-            </ButtonSize>
-            <ButtonSize>
-                <h1>Default</h1>
-            </ButtonSize>
-            <ButtonDisableShadow>
-                <h1>Default</h1>
-            </ButtonDisableShadow>
-            <ButtonDisableShadow>
-                <h1>Default</h1>
-            </ButtonDisableShadow>
-            <ButtonDisableShadow>
-                <h1>Default</h1>
-            </ButtonDisableShadow>
-            <ButtonDisableShadow>
-                <h1>Default</h1>
-            </ButtonDisableShadow>
-        </div>
-    )
+// class Button extends Component = ({ variant, disableShadow, disabled, startIcon, endIcon, size, color }) => {
+class Button extends Component {
+    constructor(props) {
+        super(props)
+
+        this.state = {
+
+        }
+    }
+
+    render() {
+        if (this.props.disableShadow) {
+            return (
+                <ButtonDisableShadow>
+                    <h1>Default</h1>
+                </ButtonDisableShadow>
+            )
+        } else if (this.props.variant === "outline") {
+            return (
+                <ButtonOutline>
+                    <h1>Default</h1>
+                </ButtonOutline>
+            )
+        } else if (this.props.variant === "text") {
+            return (
+                <ButtonText>
+                    <h1>Default</h1>
+                </ButtonText>
+            )
+        } else if (this.props.disabled) {
+            return (
+                <ButtonDisabled>
+                    <h1>Default</h1>
+                </ButtonDisabled>
+            )
+        } else if (this.props.startIcon) {
+            return (
+                <ButtonIcon>
+                    <span>
+                        <FontAwesomeIcon icon={"shopping-cart"} size="2x" />
+                    </span>
+                    <h1>Default</h1>
+                </ButtonIcon>
+            )
+        } else if (this.props.size) {
+            return (
+                <ButtonIcon>
+                    <h1>Default</h1>
+                </ButtonIcon>
+            )
+        } else if (this.props.color) {
+            return (
+                <ButtonDisableShadow>
+                    <h1>Default</h1>
+                </ButtonDisableShadow>
+            )
+        } else {
+            return (
+                <ButtonDefault>
+                    <h1>Default</h1>
+                </ButtonDefault>
+            )
+        }
+    }
 }
 
 export default Button

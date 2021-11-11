@@ -10,7 +10,7 @@ const App = () => (
     <Button />
     <Button variant="outline" />
     <Button variant="text" />
-    <Button disableShadow />
+    <Button disableShadow="true" />
     <Button disabled />
     <Button variant="text" disabled />
     <Button startIcon="shopping-cart" />
