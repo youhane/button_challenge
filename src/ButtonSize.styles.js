@@ -8,5 +8,8 @@ export const ButtonSize = styled.button`
     color: white;
     display: flex;
     box-shadow: 0px 2px 3px 0px hsla(225, 100%, 40%, 0.2);
-    padding: 0 10px;
+    padding:  ${({ size }) =>
+        size === 'lg' ? '.5rem 1.5rem' : '1rem' ||
+            size === 'xl' ? '1rem 1.5rem' : '1rem'
+    };
 `

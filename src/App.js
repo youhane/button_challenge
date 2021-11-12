@@ -15,6 +15,8 @@ const App = () => (
     <Button variant="text" disabled />
     <Button startIcon="shopping-cart" />
     <Button color="green" />
+    <Button size="lg" />
+    <Button size="xl" />
     <GlobalStyle />
   </div>
 );

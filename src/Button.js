@@ -62,7 +62,7 @@ class Button extends Component {
                     <h1>Default</h1>
                 </ButtonIcon>
             )
-        } else if (this.props.size) {
+        } else if (this.props.icon) {
             return (
                 <ButtonIcon>
                     <h1>Default</h1>
@@ -76,7 +76,7 @@ class Button extends Component {
             )
         } else if (this.props.size) {
             return (
-                <ButtonSize>
+                <ButtonSize size={this.props.size}>
                     <h1>Default</h1>
                 </ButtonSize>
             )
