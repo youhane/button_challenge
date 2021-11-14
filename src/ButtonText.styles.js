@@ -9,6 +9,6 @@ export const ButtonText = styled.button`
     color: hsla(231, 99%, 62%, 1);
 
     :hover, :focus{
-        background: hsla(224, 100%, 58%, 0.1);
+        filter: brightness(85%);
     }
 `

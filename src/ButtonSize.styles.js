@@ -12,4 +12,8 @@ export const ButtonSize = styled.button`
         size === 'lg' ? '.5rem 1.5rem' : '1rem' ||
             size === 'xl' ? '1rem 1.5rem' : '1rem'
     };
+
+:hover, :focus{
+        filter: brightness(85%);
+    }
 `

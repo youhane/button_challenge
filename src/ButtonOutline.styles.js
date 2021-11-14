@@ -10,6 +10,6 @@ export const ButtonOutline = styled.button`
 
 
     :hover, :focus{
-        background-color: hsla(224, 100%, 58%, 0.1);
+        filter: brightness(85%);
     }
 `

@@ -10,6 +10,6 @@ export const ButtonDefault = styled.button`
     color: hsla(0, 0%, 25%, 1);
 
     :hover, :focus{
-        background-color: hsla(0, 0%, 68%, 1);
+        filter: brightness(85%);
     }
 `

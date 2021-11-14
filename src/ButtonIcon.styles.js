@@ -13,4 +13,8 @@ export const ButtonIcon = styled.button`
     span{
         padding: .9rem .5rem 0 0;
     }
+
+    :hover, :focus{
+        filter: brightness(85%);
+    }
 `
