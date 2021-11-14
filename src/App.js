@@ -18,8 +18,9 @@ const App = () => (
       <Button color="red" />
       <Button color="blue" />
       <Button color="green" />
+      <Button size="sm" />
+      <Button />
       <Button size="lg" />
-      <Button size="xl" />
     </div>
     <GlobalStyle />
   </div>
