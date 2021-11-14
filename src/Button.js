@@ -53,15 +53,26 @@ class Button extends Component {
                     <h1>Default</h1>
                 </ButtonDisabled>
             )
-        } else if (this.props.startIcon) {
-            return (
-                <ButtonIcon>
-                    <span>
-                        <FontAwesomeIcon icon={"shopping-cart"} size="2x" />
-                    </span>
-                    <h1>Default</h1>
-                </ButtonIcon>
-            )
+        } else if (this.props.icon) {
+            if (this.props.start) {
+                return (
+                    <ButtonIcon start>
+                        <span>
+                            <FontAwesomeIcon icon={"shopping-cart"} size="2x" />
+                        </span>
+                        <h1>Default</h1>
+                    </ButtonIcon>
+                )
+            } else if (this.props.end) {
+                return (
+                    <ButtonIcon end>
+                        <h1>Default</h1><span>
+                            <FontAwesomeIcon icon={"shopping-cart"} size="2x" />
+                        </span>
+                    </ButtonIcon>
+                )
+            }
+
         } else if (this.props.icon) {
             return (
                 <ButtonIcon>

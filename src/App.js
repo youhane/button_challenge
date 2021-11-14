@@ -14,12 +14,12 @@ const App = () => (
       <Button disableShadow="true" />
       <Button disabled />
       <Button variant="text" disabled />
-      <Button startIcon="shopping-cart" />
+      <Button icon="shopping-cart" start />
+      <Button icon="shopping-cart" end />
       <Button color="red" />
       <Button color="blue" />
       <Button color="green" />
       <Button size="sm" />
-      <Button />
       <Button size="lg" />
     </div>
     <GlobalStyle />

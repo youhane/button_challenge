@@ -11,7 +11,7 @@ export const ButtonIcon = styled.button`
     box-shadow: 0px 2px 3px 0px hsla(225, 100%, 40%, 0.2);
 
     span{
-        padding: .9rem .5rem 0 0;
+        padding: ${props => props.end ? ".9rem .5rem" : ".9rem .5rem"};
     }
 
     :hover, :focus{
