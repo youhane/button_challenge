@@ -7,4 +7,8 @@ export const ButtonColor = styled.button`
     border-radius: 10%;
     font-size: .5rem;
     padding: 0 1rem;
+
+    :hover{
+        filter: brightness(85%);
+    }
 `

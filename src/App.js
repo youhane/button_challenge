@@ -7,16 +7,20 @@ import { GlobalStyle } from "./GlobalStyle";
 const App = () => (
   <div className="App">
     <h1>Buttons</h1>
-    <Button />
-    <Button variant="outline" />
-    <Button variant="text" />
-    <Button disableShadow="true" />
-    <Button disabled />
-    <Button variant="text" disabled />
-    <Button startIcon="shopping-cart" />
-    <Button color="green" />
-    <Button size="lg" />
-    <Button size="xl" />
+    <div>
+      <Button />
+      <Button variant="outline" />
+      <Button variant="text" />
+      <Button disableShadow="true" />
+      <Button disabled />
+      <Button variant="text" disabled />
+      <Button startIcon="shopping-cart" />
+      <Button color="red" />
+      <Button color="blue" />
+      <Button color="green" />
+      <Button size="lg" />
+      <Button size="xl" />
+    </div>
     <GlobalStyle />
   </div>
 );
