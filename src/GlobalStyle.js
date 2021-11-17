@@ -11,4 +11,8 @@ export const GlobalStyle = createGlobalStyle`
     div > * {
         margin: 1rem;
     }
+
+    div > div > div > div{
+        display: flex;
+    }
 `

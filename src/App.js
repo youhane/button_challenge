@@ -8,19 +8,35 @@ const App = () => (
   <div className="App">
     <h1>Buttons</h1>
     <div>
-      <Button />
-      <Button variant="outline" />
-      <Button variant="text" />
-      <Button disableShadow="true" />
-      <Button disabled />
-      <Button variant="text" disabled />
-      <Button icon="shopping-cart" start />
-      <Button icon="shopping-cart" end />
-      <Button color="red" />
-      <Button color="blue" />
-      <Button color="green" />
-      <Button size="sm" />
-      <Button size="lg" />
+      <div>
+        <Button />
+      </div>
+      <div>
+        <Button variant="outline" />
+      </div>
+      <div>
+        <Button variant="text" />
+      </div>
+      <div>
+        <Button disableShadow="true" />
+      </div>
+      <div>
+        <Button disabled />
+        <Button disabled variant="text" />
+      </div>
+      <div>
+        <Button icon="shopping-cart" start />
+        <Button icon="shopping-cart" end />
+      </div>
+      <div>
+        <Button color="red" />
+        <Button color="blue" />
+        <Button color="green" />
+      </div>
+      <div>
+        <Button size="sm" />
+        <Button size="lg" />
+      </div>
     </div>
     <GlobalStyle />
   </div>
