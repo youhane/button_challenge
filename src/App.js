@@ -32,9 +32,11 @@ const App = () => (
         <Button color="red" />
         <Button color="blue" />
         <Button color="green" />
+        <Button color="grey" />
       </div>
       <div>
         <Button size="sm" />
+        <Button color="blue" />
         <Button size="lg" />
       </div>
     </div>

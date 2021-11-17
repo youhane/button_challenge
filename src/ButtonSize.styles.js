@@ -9,7 +9,7 @@ export const ButtonSize = styled.button`
     display: flex;
     box-shadow: 0px 2px 3px 0px hsla(225, 100%, 40%, 0.2);
     padding:  ${({ size }) =>
-        size === 'sm' ? '.001rem .5rem' : '1rem' ||
+        size === 'sm' ? '.7rem .7rem' : '1rem' ||
             size === 'lg' ? '.7rem 1.5rem' : '1rem'
     };
 

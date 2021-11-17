@@ -17,8 +17,6 @@ import { Component } from "react/cjs/react.production.min";
 import { ButtonColor } from './ButtonColor.styles';
 
 library.add(faShoppingCart)
-
-// class Button extends Component = ({ variant, disableShadow, disabled, startIcon, endIcon, size, color }) => {
 class Button extends Component {
     constructor(props) {
         super(props)
@@ -72,7 +70,6 @@ class Button extends Component {
                     </ButtonIcon>
                 )
             }
-
         } else if (this.props.icon) {
             return (
                 <ButtonIcon>
