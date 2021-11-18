@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://buttoncomponents.netlify.app/">
       Demo
     </a>
     <span> | </span>
@@ -36,12 +36,6 @@
 ## Overview
 
 ![screenshot](https://github.com/youhane/button_challenge/blob/main/images/chrome_zQMVuaXU40.png)
-
-
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
 
 ### Built With
 
